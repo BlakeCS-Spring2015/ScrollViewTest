@@ -21,32 +21,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    UIImage *image = [UIImage imageNamed:@"stuff.jpg"];
+    UIImage *image = [UIImage imageNamed:@"tesla.jpg"];
     self.imageView = [[UIImageView alloc] initWithImage:image];
     
-    self.scrollView.contentSize = CGSizeMake(1024.0, 768.0);
-    
- //   self.imageView.contentMode = UIViewContentModeScaleAspectFit;
+  //  self.scrollView.contentSize = CGSizeMake(1024.0, 768.0);
     
     self.scrollView.imageViewToScroll = self.imageView;
     
     [self.scrollView addSubview:self.imageView];
     
-   // CGSize boundsSize = self.scrollView.bounds.size;
-    
-
-
-    // Calculate image aspect ratio
-    CGFloat iPadAspectRatio = (1024.0 / 768.0);
-    CGFloat imageAspectRatio = (image.size.width / image.size.height);
-    
     CGFloat zoomFactor;
-    if (imageAspectRatio > iPadAspectRatio) {
-        // Wider aspect
+  
+    if (image.size.width >= 1024.0) {
         zoomFactor =  1024.0 / image.size.width;
     }
     else {
-        // Taller aspect
         zoomFactor = 768.0 / image.size.height;
     }
     

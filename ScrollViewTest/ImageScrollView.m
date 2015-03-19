@@ -18,25 +18,6 @@
     // Drawing code
 }
 */
-//
-//-(void)layoutIfNeeded {
-//    CGSize boundsSize = self.bounds.size;
-//    CGRect frameToCenter = self.imageViewToScroll.frame;
-//    
-//    CGFloat zoomFactor;
-//    
-//    // center horizontally
-//    if (frameToCenter.size.width > boundsSize.width)
-//        zoomFactor =  boundsSize.width / frameToCenter.size.width;
-//    
-//    // center vertically
-//    if (frameToCenter.size.height > boundsSize.height)
-//        zoomFactor =  boundsSize.height / frameToCenter.size.height;
-//
-//    [self setMinimumZoomScale:zoomFactor];
-//    [self setZoomScale:zoomFactor];
-//
-//}
 
 -(void)layoutSubviews {
     [super layoutSubviews];
@@ -56,28 +37,8 @@
     else
         frameToCenter.origin.y = 0;
 
-//    [self setMinimumZoomScale:zoomFactor];
-//    [self setZoomScale:zoomFactor];
-//    
     self.imageViewToScroll.frame = frameToCenter;
-    
-    
-    //    // Calculate image aspect ratio
-    //    CGFloat iPadAspectRatio = (1024.0 / 768.0);
-    //    CGFloat imageAspectRatio = (image.size.width / image.size.height);
-    //
-    //    CGFloat zoomFactor;
-    //    if (imageAspectRatio > iPadAspectRatio) {
-    //        // Wider aspect
-    //        zoomFactor =  1024.0 / image.size.width;
-    //    }
-    //    else {
-    //        // Taller aspect
-    //        zoomFactor = 768.0 / image.size.height;
-    //    }
-    //
-    //    [self.scrollView setMinimumZoomScale:zoomFactor];
-    //    [self.scrollView setZoomScale:zoomFactor];
+
     
 }
 
