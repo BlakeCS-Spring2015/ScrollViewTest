@@ -44,7 +44,6 @@
     CGSize boundsSize = self.bounds.size;
     CGRect frameToCenter = self.imageViewToScroll.frame;
     
-
     // center horizontally
     if (frameToCenter.size.width < boundsSize.width)
         frameToCenter.origin.x = (boundsSize.width - frameToCenter.size.width) / 2;
