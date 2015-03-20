@@ -13,9 +13,27 @@
 
 - (instancetype)initWithImage:(UIImage *)image
 {
-    self = [self initWithFrame:];
+    self = [self initWithFrame:RECTANGLE];
     if (self) {
+        UIImage *image = [UIImage imageNamed:@"tesla.jpg"];
         
+        self.imageView = [[UIImageView alloc] initWithImage:image];
+        //
+        //    self.scrollView.imageViewToScroll = self.imageView;
+        //
+        //    [self.scrollView addSubview:self.imageView];
+        //
+        //    CGFloat zoomFactor;
+        //
+        //    if (image.size.width >= 1024.0) {
+        //        zoomFactor =  1024.0 / image.size.width;
+        //    }
+        //    else {
+        //        zoomFactor = 768.0 / image.size.height;
+        //    }
+        //
+        //    [self.scrollView setMinimumZoomScale:zoomFactor];
+        //    [self.scrollView setZoomScale:zoomFactor];
     }
     return self
 }
