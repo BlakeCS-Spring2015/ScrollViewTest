@@ -16,8 +16,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" maximumZoomScale="3" translatesAutoresizingMaskIntoConstraints="NO" id="ae8-kH-U8Z" customClass="ImageScrollView">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" maximumZoomScale="2" translatesAutoresizingMaskIntoConstraints="NO" id="ae8-kH-U8Z" customClass="ImageScrollView">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="0.19171133637428284" green="0.19174480438232422" blue="0.19170400500297546" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="f1H-rw-DQU"/>
                                 </connections>
@@ -31,6 +32,7 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ae8-kH-U8Z" secondAttribute="bottom" id="tec-kA-Kqf"/>
                         </constraints>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="scrollView" destination="ae8-kH-U8Z" id="e0q-4x-G01"/>
                     </connections>
