@@ -12,4 +12,6 @@
 
 @property (weak, nonatomic) UIImageView *imageViewToScroll;
 
+- (instancetype)initWithImage:(UIImage *)image;
+
 @end
