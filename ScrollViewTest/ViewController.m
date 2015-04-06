@@ -26,6 +26,8 @@
     
     ImageScrollView *scrollView = [[ImageScrollView alloc] initWithImage:image];
     [self.view addSubview:scrollView];
+    self.scrollView = scrollView;
+    self.scrollView.delegate = self;
     
 //    self.imageView = [[UIImageView alloc] initWithImage:image];
 //        

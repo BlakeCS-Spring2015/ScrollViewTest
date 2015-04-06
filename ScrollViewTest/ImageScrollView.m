@@ -14,7 +14,7 @@
 
 - (instancetype)initWithImage:(UIImage *)image
 {
-    CGRect boundsFrame = self.frame;
+    CGRect boundsFrame = CGRectMake(0, 0, 1024.0, 768.0);
     self = [self initWithFrame:boundsFrame];
     if (self) {
         
@@ -45,27 +45,27 @@
 }
 */
 
-//-(void)layoutSubviews {
-//    [super layoutSubviews];
-//    
-//    CGSize boundsSize = self.bounds.size;
-//    CGRect frameToCenter = self.imageViewToScroll.frame;
-//    
-//    // center horizontally
-//    if (frameToCenter.size.width < boundsSize.width)
-//        frameToCenter.origin.x = (boundsSize.width - frameToCenter.size.width) / 2;
-//    else
-//        frameToCenter.origin.x = 0;
-//
-//    // center vertically
-//    if (frameToCenter.size.height < boundsSize.height)
-//        frameToCenter.origin.y = (boundsSize.height - frameToCenter.size.height) / 2;
-//    else
-//        frameToCenter.origin.y = 0;
-//
-//    self.imageViewToScroll.frame = frameToCenter;
-//
-//    
-//}
+-(void)layoutSubviews {
+    [super layoutSubviews];
+    
+    CGSize boundsSize = self.bounds.size;
+    CGRect frameToCenter = self.imageViewToScroll.frame;
+    
+    // center horizontally
+    if (frameToCenter.size.width < boundsSize.width)
+        frameToCenter.origin.x = (boundsSize.width - frameToCenter.size.width) / 2;
+    else
+        frameToCenter.origin.x = 0;
+
+    // center vertically
+    if (frameToCenter.size.height < boundsSize.height)
+        frameToCenter.origin.y = (boundsSize.height - frameToCenter.size.height) / 2;
+    else
+        frameToCenter.origin.y = 0;
+
+    self.imageViewToScroll.frame = frameToCenter;
+
+    
+}
 
 @end
