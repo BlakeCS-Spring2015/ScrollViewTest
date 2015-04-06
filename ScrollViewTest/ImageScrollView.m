@@ -18,10 +18,13 @@
     self = [self initWithFrame:boundsFrame];
     if (self) {
         
+        // Initialize a UIImageView with the image that was passed from ViewController.m
         self.imageViewToScroll = [[UIImageView alloc] initWithImage:image];
         
+        // Add that image view as a subview of the scroll view
         [self addSubview:self.imageViewToScroll];
     
+        // The rest of this function scales the image to the proper size on load
         CGFloat zoomFactor;
         
         if (image.size.width >= 1024.0) {
@@ -51,13 +54,14 @@
     CGSize boundsSize = self.bounds.size;
     CGRect frameToCenter = self.imageViewToScroll.frame;
     
-    // center horizontally
+    // center horizontally when image is taller than it is wide
+    // the origin is the top left corner of the object
     if (frameToCenter.size.width < boundsSize.width)
         frameToCenter.origin.x = (boundsSize.width - frameToCenter.size.width) / 2;
     else
         frameToCenter.origin.x = 0;
 
-    // center vertically
+    // center vertically when image is wider than it is tall
     if (frameToCenter.size.height < boundsSize.height)
         frameToCenter.origin.y = (boundsSize.height - frameToCenter.size.height) / 2;
     else

@@ -21,31 +21,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    // Choose the image
     UIImage *image = [UIImage imageNamed:@"tesla.jpg"];
     
-    
+    // Initialize an instance of the ImageScrollView class with our image
+    // This calls the initWithImage function in ImageScrollView.m
     ImageScrollView *scrollView = [[ImageScrollView alloc] initWithImage:image];
+    
+    // Add the ImageScrollView we just created into the view controller
     [self.view addSubview:scrollView];
+    
     self.scrollView = scrollView;
     self.scrollView.delegate = self;
-    
-//    self.imageView = [[UIImageView alloc] initWithImage:image];
-//        
-//    self.scrollView.imageViewToScroll = self.imageView;
-//    
-//    [self.scrollView addSubview:self.imageView];
-//    
-//    CGFloat zoomFactor;
-//  
-//    if (image.size.width >= 1024.0) {
-//        zoomFactor =  1024.0 / image.size.width;
-//    }
-//    else {
-//        zoomFactor = 768.0 / image.size.height;
-//    }
-//    
-//    [self.scrollView setMinimumZoomScale:zoomFactor];
-//    [self.scrollView setZoomScale:zoomFactor];
+
     
 }
 
