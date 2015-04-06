@@ -10,7 +10,7 @@
 
 @interface ImageScrollView : UIScrollView
 
-@property (weak, nonatomic) UIImageView *imageViewToScroll;
+@property (strong, nonatomic) UIImageView *imageViewToScroll;
 
 - (instancetype)initWithImage:(UIImage *)image;
 

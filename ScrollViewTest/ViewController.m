@@ -21,7 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-//    UIImage *image = [UIImage imageNamed:@"tesla.jpg"];
+    UIImage *image = [UIImage imageNamed:@"tesla.jpg"];
     
     
     ImageScrollView *scrollView = [[ImageScrollView alloc] initWithImage:image];
