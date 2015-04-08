@@ -15,6 +15,7 @@
 		7D50A4B41AB9E2A50062C514 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D50A4B21AB9E2A50062C514 /* LaunchScreen.xib */; };
 		7D50A4C01AB9E2A50062C514 /* ScrollViewTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D50A4BF1AB9E2A50062C514 /* ScrollViewTestTests.m */; };
 		7D50A4CA1AB9F1C50062C514 /* tesla.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D50A4C91AB9F1C50062C514 /* tesla.jpg */; };
+		BC35406B1AD5A99A00C7A7BE /* imgres-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BC35406A1AD5A99A00C7A7BE /* imgres-2.jpg */; };
 		F84A16D41ABA730A00DB1A96 /* ImageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = F84A16D31ABA730A00DB1A96 /* ImageScrollView.m */; };
 		F84A16D61ABB0EBC00DB1A96 /* stuff.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F84A16D51ABB0EBC00DB1A96 /* stuff.jpg */; };
 /* End PBXBuildFile section */
@@ -44,6 +45,7 @@
 		7D50A4BE1AB9E2A50062C514 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D50A4BF1AB9E2A50062C514 /* ScrollViewTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollViewTestTests.m; sourceTree = "<group>"; };
 		7D50A4C91AB9F1C50062C514 /* tesla.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tesla.jpg; sourceTree = "<group>"; };
+		BC35406A1AD5A99A00C7A7BE /* imgres-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "imgres-2.jpg"; sourceTree = "<group>"; };
 		F84A16D21ABA730A00DB1A96 /* ImageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageScrollView.h; sourceTree = "<group>"; };
 		F84A16D31ABA730A00DB1A96 /* ImageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageScrollView.m; sourceTree = "<group>"; };
 		F84A16D51ABB0EBC00DB1A96 /* stuff.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stuff.jpg; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				7D50A4B21AB9E2A50062C514 /* LaunchScreen.xib */,
 				7D50A4C91AB9F1C50062C514 /* tesla.jpg */,
 				F84A16D51ABB0EBC00DB1A96 /* stuff.jpg */,
+				BC35406A1AD5A99A00C7A7BE /* imgres-2.jpg */,
 				7D50A4A31AB9E2A50062C514 /* Supporting Files */,
 			);
 			path = ScrollViewTest;
@@ -215,6 +218,7 @@
 				7D50A4B41AB9E2A50062C514 /* LaunchScreen.xib in Resources */,
 				7D50A4CA1AB9F1C50062C514 /* tesla.jpg in Resources */,
 				7D50A4B11AB9E2A50062C514 /* Images.xcassets in Resources */,
+				BC35406B1AD5A99A00C7A7BE /* imgres-2.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

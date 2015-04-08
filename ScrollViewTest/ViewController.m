@@ -13,6 +13,7 @@
 
 @property (weak, nonatomic) IBOutlet ImageScrollView *scrollView;
 @property (strong, nonatomic) UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UIImageView *instructionImage;
 
 @end
 
@@ -34,9 +35,19 @@
     
     self.scrollView = scrollView;
     self.scrollView.delegate = self;
-
+}
+    -(void)hideImage:(UIImageView *)image{ image.hidden = YES;
     
 }
+    
+    - (void) viewDidAppear:(BOOL)animated{
+        UIImage *instructionimage = [UIImage imageNamed:@"imgres-2.jpg"];
+        self.instructionImage.image = instructionimage;
+        [self performSelector:@selector(hideImage:) withObject:self.instructionImage afterDelay:2.0];
+    }
+
+    
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
