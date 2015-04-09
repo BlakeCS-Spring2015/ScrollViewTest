@@ -23,11 +23,11 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     // Choose the image
-    UIImage *image = [UIImage imageNamed:@"tesla.jpg"];
+    UIImage *theImage = [UIImage imageNamed:@"tesla.jpg"];
     
     // Initialize an instance of the ImageScrollView class with our image
     // This calls the initWithImage function in ImageScrollView.m
-    ImageScrollView *scrollView = [[ImageScrollView alloc] initWithImage:image];
+    ImageScrollView *scrollView = [[ImageScrollView alloc] initWithImage:theImage];
     
     // Add the ImageScrollView we just created into the view controller
     [self.view addSubview:scrollView];
